@@ -1,0 +1,135 @@
+{% extends 'BaseHome.html' %}
+
+{% block head %}
+
+    <meta name="keywords" content="Enter Data for WPT">
+    <title>dataform</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Dataform.css')}}" media="screen">
+
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Dataform">
+    <meta property="og:type" content="website">
+
+
+{% endblock %}
+
+{% block body %}
+
+  <header class="u-align-center-sm u-align-center-xs u-clearfix u-header" id="sec-b954">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      
+      <nav class="u-align-left u-menu u-menu-dropdown u-offcanvas u-menu-1" data-position="">
+                    <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px; font-weight: 700;">
+                      <a class="u-button-style u-custom-border u-custom-border-color u-custom-borders u-custom-left-right-menu-spacing u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link" href="#">
+                        <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 302 302" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-8a8f"></use></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="svg-8a8f" x="0px" y="0px" viewBox="0 0 302 302" style="enable-background:new 0 0 302 302;" xml:space="preserve" class="u-svg-content"><g><rect y="36" width="302" height="30"></rect><rect y="236" width="302" height="30"></rect><rect y="136" width="302" height="30"></rect>
+          </g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                      </a>
+                    </div>
+                    <div class="u-custom-menu u-nav-container">
+                      <ul class="u-nav u-spacing-20 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base" href="Home.html" style="padding: 14px 10px;">Home</a>
+          </li><li class="u-nav-item"><a class="u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base" href="About.html" style="padding: 14px 10px;">About</a>
+          </li><li class="u-nav-item"><a class="u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base" href="Contact.html" style="padding: 14px 10px;">Contact</a>
+          </li></ul>
+                    </div>
+                    <div class="u-custom-menu u-nav-container-collapse">
+                      <div class="u-align-center u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+                        <div class="u-inner-container-layout u-sidenav-overflow">
+                          <div class="u-menu-close"></div>
+                          <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Home.html">Home</a>
+          </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="About.html">About</a>
+          </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Contact.html">Contact</a>
+          </li></ul>
+                        </div>
+                      </div>
+                      <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+                    </div>
+      </nav>
+    </div>
+  </header>
+
+
+
+  <section class="u-align-center u-clearfix u-image u-shading u-section-1" id="carousel_9894" data-image-width="1600" data-image-height="971">
+
+      <div class="u-clearfix u-sheet u-sheet-1">
+
+        <h2 class="u-custom-font u-font-montserrat u-text u-text-default u-text-1">Enter Data for WPT</h2>
+        <div class="u-align-left u-container-style u-group u-opacity u-opacity-75 u-palette-5-dark-1 u-radius-32 u-shape-round u-group-1">
+          <div class="u-container-layout u-valign-middle u-container-layout-1">
+            <div class="u-form u-form-1">
+
+              <form action="result" method="POST" class="u-clearfix u-form-spacing-28 u-form-vertical u-inner-form" source="custom" name="form" style="padding: 13px;">
+
+                <div class="u-form-group u-label-top u-form-group-1">
+                  <label for="text-61fc" class="u-label">Water PH :</label>
+                  <input type="text" placeholder="Enter your Value" id="text-61fc" name="water_Ph" class="u-border-1 u-border-grey-10 u-grey-10 u-input u-input-rectangle u-radius-20">
+                </div>
+                <div class="u-form-group u-label-top u-form-group-2">
+                  <label for="text-0bf6" class="u-label">Water Hardness :</label>
+                  <input type="text" placeholder="Enter your Value" id="text-0bf6" name="water_Hardness" class="u-border-1 u-border-grey-10 u-grey-10 u-input u-input-rectangle u-radius-20">
+                </div>
+                <div class="u-form-group u-label-top u-form-group-3">
+                  <label for="text-6b28" class="u-label">Water Solids :</label>
+                  <input type="text" placeholder="Enter your Value" id="text-6b28" name="water_Solids" class="u-border-1 u-border-grey-10 u-grey-10 u-input u-input-rectangle u-radius-20">
+                </div>
+                <div class="u-form-group u-label-top u-form-group-4">
+                  <label for="text-bfa0" class="u-label">Water Chloramine :</label>
+                  <input type="text" placeholder="Enter your Value" id="text-bfa0" name="water_Chloramine" class="u-border-1 u-border-grey-10 u-grey-10 u-input u-input-rectangle u-radius-20">
+                </div>
+                <div class="u-form-group u-label-top u-form-group-5">
+                  <label for="text-7b43" class="u-label">Water Sulfate :</label>
+                  <input type="text" placeholder="Enter your Value" id="text-7b43" name="water_Sulfate" class="u-border-1 u-border-grey-10 u-grey-10 u-input u-input-rectangle u-radius-20">
+                </div>
+                <div class="u-form-group u-label-top u-form-group-6">
+                  <label for="text-0029" class="u-label">Water Conductivity :</label>
+                  <input type="text" placeholder="Enter your Value" id="text-0029" name="water_Conductivity" class="u-border-1 u-border-grey-10 u-grey-10 u-input u-input-rectangle u-radius-20">
+                </div>
+                <div class="u-form-group u-label-top u-form-group-7">
+                  <label for="text-f344" class="u-label">Water Oraganic Carbon :</label>
+                  <input type="text" placeholder="Enter your Value" id="text-f344" name="water_Organic_Carbon" class="u-border-1 u-border-grey-10 u-grey-10 u-input u-input-rectangle u-radius-20">
+                </div>
+                <div class="u-form-group u-label-top u-form-group-8">
+                  <label for="text-ce42" class="u-label">Water Trihalomethanes :</label>
+                  <input type="text" placeholder="Enter your Value" id="text-ce42" name="water_Trihalomethanes" class="u-border-1 u-border-grey-10 u-grey-10 u-input u-input-rectangle u-radius-20">
+                </div>
+                <div class="u-form-group u-label-top u-form-group-9">
+                  <label for="text-551f" class="u-label">Water Turbidity :</label>
+                  <input type="text" placeholder="Enter your Value" id="text-551f" name="water_Turbidity" class="u-border-1 u-border-grey-10 u-grey-10 u-input u-input-rectangle u-radius-20">
+                </div>
+                <div class="u-align-center u-form-group u-form-submit u-label-top">
+                  <input type="submit" value="SUBMIT" class="u-btn u-btn-round u-btn-submit u-button-style u-custom-font u-font-montserrat u-palette-1-base u-radius-20 u-btn-1">
+                  
+                </div>
+                
+                <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
+                <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
+
+              </form>
+              
+            </div>
+          </div>
+        </div>
+
+        <p class="u-custom-font u-font-ubuntu u-large-text u-text u-text-variant u-text-2">
+          <span style="font-weight: 700;">Note:</span>&nbsp;Enter only Accurate Data for Correct Result&nbsp;<br>
+          <br>
+        </p>
+
+      </div>
+  </section>
+    
+    
+  <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-a034">
+    <div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1">Water Potability Test Using AI is an free to use website, and updated in regular Interval to avoid errors, but we cannot warrant full correctness of all results. While using WPT, you agree to have read and accepted our&nbsp;
+            terms of use, cookie and privacy policy.
+        </p>
+        <p class="u-small-text u-text u-text-variant u-text-2">
+        <a href="https://flask.palletsprojects.com/" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-3">Powered by Flask with Python&nbsp;</a>
+        </p>
+    </div>
+  </footer>
+ 
+{% endblock %}
+
